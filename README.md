@@ -6,8 +6,11 @@ A base for CakePHP application
 
 Rename the directory skeleton to your application name (ie: my_app).
 
-Modify the following file: 
+Modify the following files: 
 
  * index.php : define('APP_DIR', 'my_app');
+ * .htaccess : 
+  * RewriteRule    ^$ my_app/webroot/    [L]
+  * RewriteRule    (.*) my_app/webroot/$1 [L]
 
  After, run ```composer install``` to install CakePHP core files.
