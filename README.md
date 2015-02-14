@@ -9,3 +9,5 @@ Rename the directory skeleton to your application name (ie: my_app).
 Modify the following file: 
 
  * index.php : define('APP_DIR', 'my_app');
+
+ After, run ```composer install``` to install CakePHP core files.
